@@ -14,14 +14,12 @@ export default function Home() {
 
             <ScrollView style={styles.mainScroll} contentContainerStyle={styles.scrollContent}>
 
-                {/* Aqui aplicamos o componente reutilizável passando Props */}
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
                     <ActionPill color="#FFD700" accessible={true} accessibilityLabel="Botão amarelo" />
                     <ActionPill color="#00B4D8" />
                     <ActionPill isSolid={true} />
                 </ScrollView>
 
-                {/* Simulando a lista de avatares com map e key */}
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScrollAvatars}>
                     {[1, 2, 3, 4, 5].map((item) => (
                         <View key={item} style={styles.avatarGroup}>
@@ -38,7 +36,6 @@ export default function Home() {
     );
 }
 
-// Estilos reduzidos para focar na estrutura
 const styles = StyleSheet.create({
     container: { flex: 1, backgroundColor: '#000000' },
     header: { backgroundColor: '#5A189A', height: 100, paddingTop: 40, paddingHorizontal: 20 },

@@ -94,7 +94,6 @@ export default function Home() {
     );
 }
 
-// Todos os estilos da versão "Pixel Perfect" restaurados
 const styles = StyleSheet.create({
     container: { flex: 1, backgroundColor: '#000000' },
     header: { backgroundColor: '#5A189A', height: 140, paddingTop: 20, paddingHorizontal: 20 },
